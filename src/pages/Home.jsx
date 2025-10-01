@@ -1,8 +1,10 @@
-const Home = () => (
-  <section>
-    <h2 className="text-2xl font-semibold mb-2">Welcome to EpicCode Blog</h2>
-    <p className="text-[var(--text-secondary)]">Explore articles on coding, literature, and more.</p>
-  </section>
-);
+const Home = () => {
+  return (
+    <div>
+      <h1>Home Page</h1>
+      <p>This is the home page</p>
+    </div>
+  );
+};
 
 export default Home;

@@ -1,8 +1,10 @@
-const About = () => (
-  <section>
-    <h2 className="text-2xl font-semibold mb-2">About Us</h2>
-    <p className="text-[var(--text-secondary)]">This blog is curated by Mainul to share insights on code and creativity.</p>
-  </section>
-);
+const About = () => {
+  return (
+    <div>
+      <h1>About Page</h1>
+      <p>This is the about page</p>
+    </div>
+  );
+};
 
 export default About;

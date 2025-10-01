@@ -1,14 +1,14 @@
 import Header from './Header';
 import Footer from './Footer';
-import Loader from './Loader';
+import { Outlet } from 'react-router-dom';
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
     <div className="min-h-screen bg-[var(--bg)] text-[var(--text-primary)]">
       <Header />
-      <Loader />
-      
-      <main className="max-w-4xl mx-auto px-4 py-6">{children}</main>
+      <main className="max-w-4xl mx-auto px-4 py-6">
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );
