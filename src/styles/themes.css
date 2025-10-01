@@ -1,0 +1,44 @@
+/* Light Theme - Soft Lavender & Mint */
+.theme-light {
+  --bg: #F8F9FE;
+  --surface: #FFFFFF;
+  --primary: #8B5CF6;
+  --secondary: #06B6D4;
+  --accent: #10B981;
+  --text-primary: #1E1B4B;
+  --text-secondary: #6366F1;
+  --border: #E0E7FF;
+  --code-bg: #EEF2FF;
+  --code-text: #7C3AED;
+  --shadow: rgba(139, 92, 246, 0.08);
+}
+
+/* Dark Theme - Midnight Ocean */
+.theme-dark {
+  --bg: #020617;
+  --surface: #0F172A;
+  --primary: #38BDF8;
+  --secondary: #A78BFA;
+  --accent: #2DD4BF;
+  --text-primary: #F0F9FF;
+  --text-secondary: #7DD3FC;
+  --border: #1E293B;
+  --code-bg: #0C1222;
+  --code-text: #5EEAD4;
+  --shadow: rgba(56, 189, 248, 0.2);
+}
+
+/* Default Theme - Rose Gold Elegance */
+.theme-default {
+  --bg: #FFF5F7;
+  --surface: #FFFFFF;
+  --primary: #BE185D;
+  --secondary: #EA580C;
+  --accent: #9333EA;
+  --text-primary: #1F2937;
+  --text-secondary: #9CA3AF;
+  --border: #FECDD3;
+  --code-bg: #FFF1F2;
+  --code-text: #BE123C;
+  --shadow: rgba(190, 24, 93, 0.1);
+}
