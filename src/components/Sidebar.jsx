@@ -41,7 +41,6 @@ const Sidebar = ({ pageType = 'all' }) => {
     { icon: Linkedin, url: '#', label: 'LinkedIn', color: '#0A66C2' },
     { icon: Github, url: '#', label: 'GitHub', color: '#333' },
     { icon: Facebook, url: '#', label: 'Facebook', color: '#1877F2' },
-    { icon: Mail, url: 'mailto:your@email.com', label: 'Email', color: '#EA4335' },
     { icon: Globe, url: '#', label: 'Portfolio', color: '#8B5CF6' }
   ];
 
@@ -134,8 +133,8 @@ const Sidebar = ({ pageType = 'all' }) => {
 
        {/* Social Links */}
       <div className="bg-[var(--surface)] rounded-2xl p-5 border border-[var(--border)] shadow-sm">
-        <h3 className="text-lg font-bold text-[var(--text-primary)] mb-4">Connect</h3>
-        <div className="flex flex-wrap gap-3">
+        <h3 className="text-lg text-center font-bold text-[var(--text-primary)] mb-4">Connect</h3>
+        <div className="flex justify-center flex-wrap gap-3">
           {socialLinks.map((link) => {
             const Icon = link.icon;
             return (
