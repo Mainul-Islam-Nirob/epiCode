@@ -18,7 +18,7 @@ const ArticleCard = ({ article }) => {
   return (
     <article className="group relative pl-8 pb-8 border-l-2 border-[var(--border)] hover:border-[var(--primary)] transition-colors">
       {/* Timeline dot */}
-      <div className="absolute left-0 top-0 -translate-x-[9px] w-4 h-4 rounded-full bg-[var(--surface)] border-2 border-[var(--border)] group-hover:border-[var(--primary)] group-hover:bg-[var(--primary)] transition-all"></div>
+      <div className="absolute left-0 top-[-13px] -translate-x-[9px] w-4 h-4 rounded-full bg-[var(--surface)] border-2 border-[var(--border)] group-hover:border-[var(--primary)] group-hover:bg-[var(--primary)] transition-all"></div>
 
       {/* Date badge */}
       {/* <div className="absolute left-0 top-8 -translate-x-[calc(100%+2rem)] text-right">
@@ -52,7 +52,8 @@ const ArticleCard = ({ article }) => {
 
         {/* Excerpt */}
         <p className="text-sm text-[var(--text-secondary)] mb-4 line-clamp-2">
-          {truncate(article.excerpt || article.content, 120)}
+          {truncate(article.excerpt || article.content, 290)}
+          {/* {article.excerpt} */}
         </p>
 
         {/* Footer */}

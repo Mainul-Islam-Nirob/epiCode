@@ -35,15 +35,15 @@ const Home = () => {
     return (
       <div className="pb-6 mr-3">
         <div className="mb-8 animate-pulse">
-          <div className="h-8 bg-[var(--code-bg)] rounded w-1/3 mb-2"></div>
+          <div className="h-10 bg-[var(--code-bg)] rounded w-1/3 mb-2"></div>
         </div>
         <div className="space-y-6">
           {[...Array(5)].map((_, i) => (
             <div key={i} className="pl-8 border-l-2 border-[var(--border)]">
               <div className="bg-[var(--surface)] rounded-xl p-5 border border-[var(--border)] animate-pulse">
-                <div className="h-4 bg-[var(--code-bg)] rounded w-3/4 mb-3"></div>
-                <div className="h-4 bg-[var(--code-bg)] rounded w-full mb-2"></div>
-                <div className="h-4 bg-[var(--code-bg)] rounded w-2/3"></div>
+                <div className="h-8 bg-[var(--code-bg)] rounded w-3/4 mb-3"></div>
+                <div className="h-8 bg-[var(--code-bg)] rounded w-full mb-2"></div>
+                <div className="h-8 bg-[var(--code-bg)] rounded w-2/3"></div>
               </div>
             </div>
           ))}
