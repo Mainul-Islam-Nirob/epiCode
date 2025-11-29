@@ -45,7 +45,7 @@ const Coding = () => {
 
   if (loading) {
     return (
-      <div className="pb-6">
+      <div className="pb-6 mr-3">
         {/* Header Skeleton */}
         <div className="mb-8 animate-pulse">
           <div className="h-12 bg-[var(--code-bg)] rounded w-1/3 mb-4"></div>
@@ -85,7 +85,7 @@ const Coding = () => {
   }
 
   return (
-    <div className="pb-6">
+    <div className="pb-6 mr-3">
       {/* Header with Tech Vibe */}
       <div className="mb-8 relative">
         {/* Background Pattern */}

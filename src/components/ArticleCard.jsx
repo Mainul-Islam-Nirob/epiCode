@@ -8,12 +8,12 @@ const ArticleCard = ({ article }) => {
     return text.length > maxLength ? text.substring(0, maxLength) + '...' : text;
   };
 
-  const formatDate = (date) => {
-    return new Date(date).toLocaleDateString('en-US', {
-      month: 'short',
-      day: 'numeric'
-    });
-  };
+  // const formatDate = (date) => {
+  //   return new Date(date).toLocaleDateString('en-US', {
+  //     month: 'short',
+  //     day: 'numeric'
+  //   });
+  // };
 
   return (
     <article className="group relative pl-8 pb-8 border-l-2 border-[var(--border)] hover:border-[var(--primary)] transition-colors">
@@ -21,14 +21,14 @@ const ArticleCard = ({ article }) => {
       <div className="absolute left-0 top-0 -translate-x-[9px] w-4 h-4 rounded-full bg-[var(--surface)] border-2 border-[var(--border)] group-hover:border-[var(--primary)] group-hover:bg-[var(--primary)] transition-all"></div>
 
       {/* Date badge */}
-      <div className="absolute left-0 top-8 -translate-x-[calc(100%+2rem)] text-right">
+      {/* <div className="absolute left-0 top-8 -translate-x-[calc(100%+2rem)] text-right">
         <div className="text-sm font-bold text-[var(--text-primary)]">
           {formatDate(article.createdAt).split(' ')[0]}
         </div>
         <div className="text-xs text-[var(--text-secondary)]">
           {formatDate(article.createdAt).split(' ')[1]}
         </div>
-      </div>
+      </div> */}
 
       <div className="bg-[var(--surface)] rounded-xl p-5 border border-[var(--border)] hover:shadow-lg transition-all">
         {/* Tags */}

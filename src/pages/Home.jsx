@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import ArticleCard from '../components/ArticleCard';
-import { Clock, TrendingUp} from 'lucide-react';
+import { Clock, TrendingUp, Shuffle} from 'lucide-react';
 
 
 const Home = () => {
@@ -33,7 +33,7 @@ const Home = () => {
 
   if (loading) {
     return (
-      <div className="pb-6">
+      <div className="pb-6 mr-3">
         <div className="mb-8 animate-pulse">
           <div className="h-8 bg-[var(--code-bg)] rounded w-1/3 mb-2"></div>
         </div>
@@ -70,7 +70,7 @@ const Home = () => {
   }
 
   return (
-    <div className="pb-6">
+    <div className="pb-6 mr-3">
        {/* Header */}
       <div className="mb-6 flex items-center justify-between">
         <div>
@@ -101,6 +101,17 @@ const Home = () => {
           >
             <TrendingUp className="w-4 h-4" />
             Trending
+          </button>
+           <button
+            onClick={() => setSortBy('random')}
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors ${
+              sortBy === 'random'
+                ? 'bg-[var(--primary)] text-white'
+                : 'bg-[var(--surface)] text-[var(--text-secondary)] hover:bg-[var(--code-bg)]'
+            }`}
+          >
+            <Shuffle className="w-4 h-4" />
+            Random
           </button>
         </div>
       </div>

@@ -83,13 +83,13 @@ const Sidebar = ({ pageType = 'all' }) => {
       </div>
 
       {/* Random Article */}
-      <button
+      {/* <button
         onClick={handleRandomArticle}
         className="w-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white rounded-2xl p-4 font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
       >
         <Shuffle className="w-5 h-5" />
         Random Article
-      </button>
+      </button> */}
 
       {/* Social Links */}
       <div className="bg-[var(--bg)] rounded-2xl p-5 border border-[var(--border)]">
