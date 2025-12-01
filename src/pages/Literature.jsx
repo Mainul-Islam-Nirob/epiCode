@@ -98,25 +98,24 @@ const Literature = () => {
 
         <div className="relative">
           {/* Title with Literary Style */}
-          <div className="flex items-center gap-4 mb-2">
-            <div className="flex items-center gap-2">
+          <div className="flex items-center gap-4 mb-2 justify-between">
+            {/* <div className="flex items-center gap-2">
               <BookOpen className="w-10 h-10 text-[var(--primary)]" />
-              <Feather className="w-8 h-8 text-[var(--secondary)]" />
-            </div>
+               <Feather className="w-8 h-8 text-[var(--secondary)]" />
+            </div> */}
             <div>
               <h1 className="text-4xl font-serif font-bold text-[var(--text-primary)] tracking-tight">
-                <span className="text-[var(--primary)]">"</span>
+                {/* <span className="text-[var(--primary)]">"</span> */}
                 Literature
-                <span className="text-[var(--secondary)]">"</span>
+                {/* <span className="text-[var(--secondary)]">"</span> */}
               </h1>
               <p className="text-[var(--text-secondary)] italic text-sm">
                 A collection of {articles.length} literary pieces
               </p>
             </div>
-          </div>
 
-          {/* Filter Buttons - Elegant Style */}
-          <div className="flex flex-wrap gap-3 mt-6">
+              {/* Filter Buttons - Elegant Style */}
+          <div className="flex flex-wrap gap-3">
             {filterButtons.map((btn) => {
               const Icon = btn.icon;
               return (
@@ -135,6 +134,9 @@ const Literature = () => {
               );
             })}
           </div>
+          </div>
+
+        
 
           {/* Literary Stats Cards */}
           <div className="mt-6 grid grid-cols-3 gap-4">

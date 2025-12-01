@@ -98,11 +98,11 @@ const Coding = () => {
 
         <div className="relative">
           {/* Title with Tech Icons */}
-          <div className="flex items-center gap-4 mb-2">
-            <div className="flex items-center gap-2">
+          <div className="flex items-center gap-4 mb-2 justify-between">
+            {/* <div className="flex items-center gap-2">
               <Code2 className="w-10 h-10 text-[var(--primary)]" />
               <Terminal className="w-8 h-8 text-[var(--secondary)]" />
-            </div>
+            </div> */}
             <div>
               <h1 className="text-4xl font-black text-[var(--text-primary)] tracking-tight">
                 <span className="text-[var(--primary)]">{'<'}</span>
@@ -113,10 +113,9 @@ const Coding = () => {
                 // {articles.length} articles found
               </p>
             </div>
-          </div>
 
-          {/* Filter Buttons */}
-          <div className="flex flex-wrap gap-3 mt-6">
+             {/* Filter Buttons */}
+          <div className="flex flex-wrap gap-3">
             {filterButtons.map((btn) => {
               const Icon = btn.icon;
               return (
@@ -136,6 +135,9 @@ const Coding = () => {
             })}
           </div>
 
+          </div>
+
+         
           {/* Tech Stats Banner */}
           <div className="mt-6 grid grid-cols-3 gap-4">
             <div className="bg-gradient-to-br from-[var(--primary)]/10 to-[var(--primary)]/5 rounded-xl p-4 border border-[var(--primary)]/20">
