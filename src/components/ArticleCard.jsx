@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Clock, MessageCircle, ThumbsUp, Bookmark } from 'lucide-react';
+import { Clock, MessageCircle, ThumbsUp, Bookmark, UserPen } from 'lucide-react';
 
 const ArticleCard = ({ article }) => {
   const truncate = (text, maxLength) => {
@@ -58,11 +58,13 @@ const ArticleCard = ({ article }) => {
 
         {/* Footer */}
         <div className="flex items-center justify-between text-xs">
-          <div className="flex items-center gap-2 text-[var(--text-secondary)]">
+          <div className="flex items-center gap-1.5 text-[var(--text-secondary)]">
+            <UserPen  className="w-3.5 h-3.5" />
             <span className="font-medium text-[var(--text-primary)]">
               {article.author?.name || 'Anonymous'}
             </span>
-            <span>·</span>
+            <span>|</span>
+            <Clock  className="w-3.5 h-3.5"/>
             <span>{article.readTime} min</span>
           </div>
 
