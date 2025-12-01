@@ -57,7 +57,7 @@ const Sidebar = ({ pageType = 'all' }) => {
                 <button
                   key={tag}
                   onClick={() => toggleTag(tag)}
-                  className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200 ${
+                  className={`cursor-pointer px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200 ${
                     selectedTags.includes(tag)
                       ? 'bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white shadow-md scale-105'
                       : 'bg-[var(--code-bg)] text-[var(--text-secondary)] hover:bg-[var(--primary)] hover:text-white'
@@ -74,7 +74,7 @@ const Sidebar = ({ pageType = 'all' }) => {
         {selectedTags.length > 0 && (
           <button
             onClick={clearFilters}
-            className="w-full mt-4 px-4 py-2 bg-[var(--code-bg)] text-[var(--text-secondary)] rounded-lg font-medium hover:bg-[var(--secondary)] hover:text-white transition-all duration-200 flex items-center justify-center gap-2"
+            className="cursor-pointer w-full mt-4 px-4 py-2 bg-[var(--code-bg)] text-[var(--text-secondary)] rounded-lg font-medium hover:bg-[var(--secondary)] hover:text-white transition-all duration-200 flex items-center justify-center gap-2"
           >
             <X className="w-4 h-4" />
             Clear Filters ({selectedTags.length})

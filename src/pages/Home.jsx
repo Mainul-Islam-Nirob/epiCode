@@ -82,7 +82,7 @@ const Home = () => {
         <div className="flex items-center gap-2">
           <button
             onClick={() => setSortBy('latest')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors ${
+            className={`cursor-pointer flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors ${
               sortBy === 'latest'
                 ? 'bg-[var(--primary)] text-white'
                 : 'bg-[var(--surface)] text-[var(--text-secondary)] hover:bg-[var(--code-bg)]'
@@ -93,7 +93,7 @@ const Home = () => {
           </button>
           <button
             onClick={() => setSortBy('trending')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors ${
+            className={`cursor-pointer flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors ${
               sortBy === 'trending'
                 ? 'bg-[var(--primary)] text-white'
                 : 'bg-[var(--surface)] text-[var(--text-secondary)] hover:bg-[var(--code-bg)]'
@@ -104,7 +104,7 @@ const Home = () => {
           </button>
            <button
             onClick={() => setSortBy('random')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors ${
+            className={`cursor-pointer flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-colors ${
               sortBy === 'random'
                 ? 'bg-[var(--primary)] text-white'
                 : 'bg-[var(--surface)] text-[var(--text-secondary)] hover:bg-[var(--code-bg)]'

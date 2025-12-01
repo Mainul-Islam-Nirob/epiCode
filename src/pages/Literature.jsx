@@ -122,7 +122,7 @@ const Literature = () => {
                 <button
                   key={btn.id}
                   onClick={btn.action || (() => setFilter(btn.id))}
-                  className={`flex items-center gap-2 px-6 py-2.5 rounded-full font-semibold transition-all ${
+                  className={`cursor-pointer flex items-center gap-2 px-6 py-2.5 rounded-full font-semibold transition-all ${
                     filter === btn.id && !btn.action
                       ? 'bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white shadow-lg'
                       : 'bg-[var(--surface)] text-[var(--text-secondary)] border border-[var(--border)] hover:border-[var(--primary)] hover:text-[var(--primary)]'

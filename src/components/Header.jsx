@@ -119,7 +119,7 @@ const Header = () => {
             <div className="relative">
               <button
                 onClick={() => setSearchOpen(!searchOpen)}
-                className="p-2 rounded-lg hover:bg-[var(--code-bg)] transition-colors"
+                className="cursor-pointer p-2 rounded-lg hover:bg-[var(--code-bg)] transition-colors"
                 aria-label="Search"
               >
                 <Search className="w-5 h-5 text-[var(--text-secondary)]" />
@@ -144,7 +144,7 @@ const Header = () => {
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg hover:bg-[var(--code-bg)] transition-colors"
+              className="cursor-pointer p-2 rounded-lg hover:bg-[var(--code-bg)] transition-colors"
               aria-label="Toggle theme"
             >
               {getThemeIcon()}

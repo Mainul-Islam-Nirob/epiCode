@@ -122,7 +122,7 @@ const Coding = () => {
                 <button
                   key={btn.id}
                   onClick={btn.action || (() => setFilter(btn.id))}
-                  className={`flex items-center gap-2 px-5 py-2.5 rounded-lg font-semibold transition-all border-2 ${
+                  className={`cursor-pointer flex items-center gap-2 px-5 py-2.5 rounded-lg font-semibold transition-all border-2 ${
                     filter === btn.id && !btn.action
                       ? 'bg-[var(--primary)] text-white border-[var(--primary)] shadow-lg shadow-[var(--primary)]/30'
                       : 'bg-[var(--surface)] text-[var(--text-secondary)] border-[var(--border)] hover:border-[var(--primary)] hover:text-[var(--primary)]'
