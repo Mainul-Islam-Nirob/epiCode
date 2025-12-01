@@ -31,7 +31,14 @@ const ArticleCard = ({ article }) => {
       </div> */}
 
       <div className="bg-[var(--surface)] rounded-xl p-5 border border-[var(--border)] hover:shadow-lg transition-all">
-        {/* Tags */}
+       {/* Title */}
+        <Link to={`/article/${article.id}`}>
+          <h3 className="text-lg font-bold text-[var(--text-primary)] mb-2 group-hover:text-[var(--primary)] transition-colors line-clamp-2">
+            {article.title}
+          </h3>
+        </Link>
+
+         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-3">
           {article.tags && article.tags.slice(0, 3).map((tagObj) => (
             <span
@@ -42,13 +49,6 @@ const ArticleCard = ({ article }) => {
             </span>
           ))}
         </div>
-
-        {/* Title */}
-        <Link to={`/article/${article.id}`}>
-          <h3 className="text-lg font-bold text-[var(--text-primary)] mb-2 group-hover:text-[var(--primary)] transition-colors line-clamp-2">
-            {article.title}
-          </h3>
-        </Link>
 
         {/* Excerpt */}
         <p className="text-sm text-[var(--text-secondary)] mb-4 line-clamp-2">
