@@ -170,16 +170,16 @@ const Coding = () => {
       </div>
 
       {/* Articles Grid with Code Theme */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6">
         {articles.map((article, index) => (
           <div 
             key={article.id}
             className="relative group"
           >
             {/* Line numbers decoration */}
-            <div className="absolute -left-8 top-0 text-[var(--text-secondary)] opacity-30 font-mono text-xs select-none hidden lg:block">
-              {String(index + 1).padStart(2, '0')}
-            </div>
+            {/* <div className="absolute -left-8 top-0 text-[var(--text-secondary)] opacity-30 font-mono text-xs select-none hidden lg:block">
+              {String(index + ).padStart(2, '0')}
+            </div> */}
             <ArticleCard article={article} />
           </div>
         ))}
