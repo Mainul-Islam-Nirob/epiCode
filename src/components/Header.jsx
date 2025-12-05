@@ -81,7 +81,7 @@ const Header = () => {
                 </span>
                 <span 
                   className={`text-[var(--secondary)] relative inline-block transition-all duration-300 ${
-                    isLogoHovered ? '-translate-x-5' : 'translate-x-0'
+                    isLogoHovered ? '-translate-x-0' : 'translate-x-0'
                   }`}
                 >
                   c
